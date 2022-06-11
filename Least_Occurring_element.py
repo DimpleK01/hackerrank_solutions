@@ -1,4 +1,9 @@
 
+    
+
+n= int(input())
+arr= list(map(int, input().split()))
+
 duplicates = dict((x,arr.count(x)) for x in set(arr))
 
 duplicates = dict(sorted(duplicates.items(), key=lambda item: item[1]))
@@ -11,9 +16,6 @@ for i in range(n):
 li.sort(reverse=True) 
 for i in range(len(li)):
     print (li[i], end=" ")
-    
-#Driver code
-n= int(input())
-arr= list(map(int, input().split()))
+
     
     
